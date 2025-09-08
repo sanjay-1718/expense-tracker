@@ -1,0 +1,126 @@
+{
+  "info": {
+    "name": "Expense Tracker API",
+    "_postman_id": "a1b2c3d4-expense-tracker",
+    "description": "Collection for testing Expense Tracker APIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Expense",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Lunch\",\n  \"amount\": 199.5,\n  \"category\": \"Food\",\n  \"date\": \"2025-09-01\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/expenses",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "expenses"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get All Expenses",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/expenses",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "expenses"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Expense by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/expenses/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "expenses",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update Expense",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Lunch - Updated\",\n  \"amount\": 210.0,\n  \"category\": \"Food\",\n  \"date\": \"2025-09-01\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/expenses/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "expenses",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete Expense",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/expenses/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "expenses",
+            "1"
+          ]
+        }
+      }
+    }
+  ]
+}

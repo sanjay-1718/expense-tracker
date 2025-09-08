@@ -1,0 +1,60 @@
+# Java
+*.class
+*.log
+*.ctxt
+
+# Package Files
+*.jar
+*.war
+*.ear
+
+# Eclipse / STS
+.settings/
+.classpath
+.project
+.springBeans
+.apt_generated/
+.factorypath
+.buildpath
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Maven
+target/
+!mvnw
+!/.mvn/wrapper/maven-wrapper.jar
+
+# Gradle (if present)
+.gradle/
+build/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+*.out
+*.pid
+
+# Application properties/yml (hide credentials)
+src/main/resources/application.yml
+src/main/resources/application.properties
+
+# Others
+*.swp
+*.swo
